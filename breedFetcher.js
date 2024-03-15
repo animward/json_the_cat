@@ -23,10 +23,4 @@ const fetchBreedDescription = function(breedName, callback) {
     });
 };
 
-fetchBreedDescription(breedName, (error, description) => {
-    if (error) {
-        console.log('Error fetch details:', error);
-    } else {
-        console.log(description);
-    }
-});
+module.exports = { fetchBreedDescription };
